@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Login - VoteEase</title>
+    <link rel="stylesheet" href="../styles/auth.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">VoteEase</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+        </div>
+    </nav>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h1>Voter Login</h1>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="auth-btn">Login</button>
+            </form>
+            <p class="auth-links">
+                Don't have an account? <a href="voter_register.html">Register here</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Add your details here -->
+        <p>Created by [Your Name] | &copy; 2024 VoteEase</p>
+    </footer>
+
+    <script src="../scripts/voter_login.js"></script>
+</body>
+</html>

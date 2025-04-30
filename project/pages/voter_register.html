@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration - VoteEase</title>
+    <link rel="stylesheet" href="../styles/auth.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">VoteEase</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+        </div>
+    </nav>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h1>Voter Registration</h1>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="auth-btn" id="registerButton">Register</button>
+            </form>
+
+            <!-- Added "Already have an account?" -->
+            <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </main>
+
+    <script src="../scripts/voter_register.js"></script> <!-- Ensure the JS file is linked -->
+</body>
+</html>

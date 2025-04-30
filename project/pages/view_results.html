@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Election Results</title>
+  <link rel="stylesheet" href="../styles/results.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Election Results</h1>
+    </header>
+
+    <!-- Election Results Overview Section -->
+    <section id="resultsOverview">
+      <div class="result-card">
+        <h2>Total Voter Turnout</h2>
+        <p id="turnoutPercentage">0%</p>
+      </div>
+      <div class="result-card">
+        <h2>Winner</h2>
+        <p id="winnerName">No winner yet</p>
+      </div>
+    </section>
+
+    <!-- Vote Distribution Chart Section -->
+    <section id="voteDistribution">
+      <h2>Vote Distribution</h2>
+      <canvas id="voteChart" width="400" height="400"></canvas>
+    </section>
+  </div>
+
+  <script src="../scripts/results.js"></script>
+</body>
+</html>

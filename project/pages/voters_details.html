@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voter Management</title>
+  <link rel="stylesheet" href="../styles/voters_details.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Voter Management Dashboard</h1>
+      <nav>
+        <button id="addVoterBtn">Add Voter</button>
+        <button id="exportDataBtn">Export Data</button>
+      </nav>
+    </header>
+
+    <!-- Search & Filter Section -->
+    <section id="searchFilters">
+      <input type="text" id="searchInput" placeholder="Search voters by name or ID...">
+      <button id="filterBtn">Filter</button>
+    </section>
+
+    <!-- Voter Table Section -->
+    <section id="voterTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Voter ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Region</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="voterList">
+          <!-- Dynamic content will go here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Voter Statistics Section -->
+    <section id="voterStats">
+      <h2>                       </h2>
+      <!-- Visual graphs/charts can be added here -->
+    </section>
+  </div>
+
+  <!-- Add/Edit Voter Modal -->
+  <div id="addEditVoterModal" class="modal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Add Voter</h2>
+      <form id="voterForm">
+        <label for="voterId">Voter ID</label>
+        <input type="text" id="voterId" required>
+
+        <label for="voterName">Name</label>
+        <input type="text" id="voterName" required>
+
+        <label for="voterAge">Age</label>
+        <input type="number" id="voterAge" required>
+
+        <label for="voterRegion">Region</label>
+        <input type="text" id="voterRegion" required>
+
+        <label for="voterStatus">Status</label>
+        <select id="voterStatus" required>
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option>
+        </select>
+
+        <button type="submit" id="submitVoter">Add Voter</button>
+        <button type="button" id="closeModal">Close</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="voters_details.js"></script>
+</body>
+</html>

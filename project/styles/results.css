@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #10b981;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  section {
+    margin: 40px 0;
+  }
+  
+  .result-card {
+    display: inline-block;
+    width: 45%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .result-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .result-card p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #voteDistribution {
+    margin-top: 40px;
+  }
+  
+  #voteChart {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .profile-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .profile-card {
+    width: 48%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .profile-card p {
+    font-size: 1rem;
+  }
+  
+  #regions {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #regions .region-card {
+    width: 45%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #timelineContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .timeline-event {
+    margin-bottom: 15px;
+  }
+  
+  .timeline-event p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

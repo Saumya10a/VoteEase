@@ -1,0 +1,254 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 1.5rem 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f1f5f9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo:hover {
+    color: #3b82f6; /* Slightly lighter blue */
+    transform: scale(1.1); /* Slightly enlarge the logo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+.nav-links a {
+    text-decoration: none;
+    color: #4b5563;
+    margin-left: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2563eb; /* Change color on hover */
+    transform: scale(1.2); /* Slightly enlarge the link */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
+.nav-links a.active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 150px);
+    border-radius: 20px;
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+
+
+/* Hero content */
+.hero-content {
+    flex: 1;
+    padding-right: 3rem;
+    color: #ffffff;
+}
+
+
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* Button styles */
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.primary {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.primary:hover {
+    background-color: #3b82f6;
+}
+
+.secondary {
+    background-color: #ffffff;
+    color: #1f2937;
+    border-color: #e5e7eb;
+}
+
+.secondary:hover {
+    background-color: #f1f5f9;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #6b7280;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+    border-top: 2px solid #f1f5f9;
+}
+
+/* Decorative Circles with Animation */
+.hero::before, .hero::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(37, 99, 235, 0.2);
+    animation: bubble 5s ease-in-out infinite;
+    z-index: -1;
+}
+
+.hero::before {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    right: -50px;
+}
+
+.hero::after {
+    width: 150px;
+    height: 150px;
+    bottom: 10%;
+    left: -50px;
+}
+
+/* Animation for Bubble Effect */
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    75% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 2rem;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
