@@ -18,6 +18,7 @@ build/
 # IDE and editor files
 .idea/
 .vscode/
+.bolt/
 *.swp
 *.swo
 .DS_Store

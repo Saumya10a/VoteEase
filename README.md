@@ -105,4 +105,4 @@ VoteEase is a secure, transparent, and user-friendly online voting system design
 - 🔍 Advanced search and filtering for elections
 - 📊 Enhanced analytics dashboard
 - 🌐 Multi-language support
-- 📱 Progressive Web App capabilities# VoteEase
+- 📱 Progressive Web App capabilities
